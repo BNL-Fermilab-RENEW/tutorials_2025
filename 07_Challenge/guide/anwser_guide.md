@@ -31,7 +31,7 @@ Correct by weighting the labels in the training loop.
 # Notebook 3 - 
 
 There is a ton of noise in the input image. 
-Cannot be stricitly corrected, must be documented. 
+Cannot be strictly corrected, must be documented. 
 
 # Notebook 4 - 
 
