@@ -13,7 +13,7 @@ To save your work - click the `Save a copy in Drive` button under the `File` men
 ### Group 1 
 | Day  | Topic | Notebook |
 | ------------- |------------- | -------------|
-| 1      | Introduction to Python for Science| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BNL-Fermilab-RENEW/tutorials_2024/blob/main/01_Introduction/introduction.ipynb)     | 
+| 1      | Introduction to Python for Science| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BNL-Fermilab-RENEW/tutorials_2024/blob/main/Introduction/introduction.ipynb)     | 
 | 2      |Regression and Classification with SGD | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BNL-Fermilab-RENEW/tutorials_2024/blob/main/RegressionClassification/RegressionClassification.ipynb)     |
 | 3      |Deep Neural Networks | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BNL-Fermilab-RENEW/tutorials_2024/blob/main/DeepNeuralNetworks/DNN.ipynb)    |
 | 4      |Convolutional Neural Networks | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BNL-Fermilab-RENEW/tutorials_2024/blob/main/ConvolutionalNeuralNetwork/Intro_CNN_Classifying_Galaxy_Mergers.ipynb) 
