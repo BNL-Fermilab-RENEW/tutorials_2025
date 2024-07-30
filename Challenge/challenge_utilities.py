@@ -75,12 +75,14 @@ class SkyGeneratorTrue(tf.keras.utils.Sequence):
 
 class SkyGenerator01(SkyGeneratorTrue):
     def __init__(self, n_samples, pre_processing=None, train=True, shuffle=False, batch_size=64):
-        super().__init__(n_samples, pre_processing, train, shuffle, batch_size)
+        image_size = 28
+        super().__init__(n_samples, image_size, pre_processing, train, shuffle, batch_size)
 
 
 class SkyGenerator02(SkyGeneratorTrue): 
     def __init__(self, n_samples, pre_processing=None, train=True, shuffle=False, batch_size=64):
-        super().__init__(n_samples, pre_processing, train, shuffle, batch_size)
+        image_size = 28
+        super().__init__(n_samples, image_size, pre_processing, train, shuffle, batch_size)
 
     def decide_labels(self): 
         n_stars = self.rng.integers(low=int(.85*self.n_samples), high=int(.95*self.n_samples))
@@ -94,13 +96,14 @@ class SkyGenerator02(SkyGeneratorTrue):
     
 class SkyGenerator03(SkyGeneratorTrue): 
     def __init__(self, n_samples, pre_processing=None, train=True, shuffle=False, batch_size=64):
-        super().__init__(n_samples, pre_processing, train, shuffle, batch_size)
+        image_size = 64
+        super().__init__(n_samples, image_size, pre_processing, train, shuffle, batch_size)
         self.noise_level = 0.6
-        self.image_size = 64
 
 class SkyGenerator04(SkyGeneratorTrue): 
     def __init__(self, n_samples, pre_processing=None, train=True, shuffle=False, batch_size=64):
-        super().__init__(n_samples, pre_processing, train, shuffle, batch_size)
+        image_size = 28
+        super().__init__(n_samples, image_size, pre_processing, train, shuffle, batch_size)
         
     def decide_labels(self): 
         n_stars = self.rng.integers(low=int(.45*self.n_samples), high=int(.65*self.n_samples))
@@ -115,8 +118,8 @@ class SkyGenerator04(SkyGeneratorTrue):
     
 class SkyGenerator05(SkyGeneratorTrue): 
     def __init__(self, n_samples, pre_processing=None, train=True, shuffle=False, batch_size=64):
-        super().__init__(n_samples, pre_processing, train, shuffle, batch_size)
-
+        image_size = 28
+        super().__init__(n_samples, image_size, pre_processing, train, shuffle, batch_size)
 
 class Eval: 
     @staticmethod
