@@ -30,8 +30,8 @@ Correct by weighting the labels in the training loop.
 
 # Notebook 3 - 
 
-There is a ton of noise in the input image. 
-Cannot be strictly corrected, must be documented. 
+The data includes a ton of completely empty images. 
+A pre-processing function can be written to filter these out.
 
 # Notebook 4 - 
 
