@@ -11,12 +11,12 @@ To save your work - click the `Save a copy in Drive` button under the `File` men
 ## Fermilab Schedule 
 
 ### Group 1 
-| Day  | Topic | Notebook |
-| ------------- |------------- | -------------|
-| 1      | Introduction to Python for Science| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BNL-Fermilab-RENEW/tutorials_2025/blob/main/Introduction/introduction.ipynb)     | 
-| 2      |Regression and Classification with SGD | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BNL-Fermilab-RENEW/tutorials_2025/blob/main/RegressionClassification/RegressionClassification.ipynb)     |
-| 3      |Deep Neural Networks | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BNL-Fermilab-RENEW/tutorials_2025/blob/main/DeepNeuralNetworks/DNN.ipynb)    |
-| 4      |Convolutional Neural Networks | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BNL-Fermilab-RENEW/tutorials_2025/blob/main/ConvolutionalNeuralNetwork/Intro_CNN_Classifying_Galaxy_Mergers.ipynb) 
+| Day  | Topic | Notebook | Companion Materials |
+| ------------- |------------- | -------------| -------------| 
+| 1      | Introduction to Python for Science| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BNL-Fermilab-RENEW/tutorials_2025/blob/main/Introduction/introduction.ipynb)     | [![View additional resources](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BNL-Fermilab-RENEW/tutorials_2025/blob/main/Introduction/introduction-companion.ipynb) 
+| 2      |Regression and Classification with SGD | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BNL-Fermilab-RENEW/tutorials_2025/blob/main/RegressionClassification/RegressionClassification.ipynb)     | n/a |
+| 3      |Deep Neural Networks | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BNL-Fermilab-RENEW/tutorials_2025/blob/main/DeepNeuralNetworks/DNN.ipynb)    | n/a |
+| 4      |Convolutional Neural Networks | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BNL-Fermilab-RENEW/tutorials_2025/blob/main/ConvolutionalNeuralNetwork/Intro_CNN_Classifying_Galaxy_Mergers.ipynb) | n/a |
 
 ## Group 2 
 
