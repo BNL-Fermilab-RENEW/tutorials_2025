@@ -23,7 +23,7 @@ class SkyGeneratorTrue(tf.keras.utils.Sequence):
         self.labels = self.decide_labels()
 
     def decide_labels(self): 
-        n_stars = self.rng.integers(low=int(.45*self.n_samples), high=int(.65*self.n_samples))
+        n_stars = (self.rng.integers(low=int(.45*self.n_samples), high=int(.65*self.n_samples)))
         n_galaxies = self.n_samples-n_stars
         labels = [0 for _ in range(n_stars)] + [1 for _ in range(n_galaxies)]
 
@@ -31,7 +31,7 @@ class SkyGeneratorTrue(tf.keras.utils.Sequence):
             self.rng.shuffle(labels)
 
         return np.asarray(labels)
- 
+
     def generate_image(self, label): 
         radius = self.rng.integers(low=1, high=self.image_size/2)
         center_x = self.rng.integers(low=1, high=self.image_size)
@@ -45,7 +45,7 @@ class SkyGeneratorTrue(tf.keras.utils.Sequence):
                     ).create_object(
                         center_x=center_x, center_y=center_y
                         )
- 
+
         else: 
             image = GalaxyObject(
                 image_dimensions=(self.image_size, self.image_size), 
@@ -85,7 +85,7 @@ class SkyGenerator02(SkyGeneratorTrue):
         super().__init__(n_samples, image_size, pre_processing, train, shuffle, batch_size)
 
     def decide_labels(self): 
-        n_stars = self.rng.integers(low=int(.85*self.n_samples), high=int(.95*self.n_samples))
+        n_stars = (self.rng.integers(low=int(.85*self.n_samples), high=int(.95*self.n_samples)))
         n_galaxies = self.n_samples-n_stars
         labels = [0 for _ in range(n_stars)] + [1 for _ in range(n_galaxies)]
 
@@ -98,7 +98,28 @@ class SkyGenerator03(SkyGeneratorTrue):
     def __init__(self, n_samples, pre_processing=None, train=True, shuffle=False, batch_size=64):
         image_size = 64
         super().__init__(n_samples, image_size, pre_processing, train, shuffle, batch_size)
-        self.noise_level = 0.6
+
+    def decide_labels(self):
+        n_stars = int((self.rng.integers(low=int(.15*self.n_samples), high=int(.25*self.n_samples))))
+        n_galaxies = int(.5 * (self.n_samples-n_stars))
+        wild_card = self.n_samples - (n_stars+n_galaxies)
+        labels = [0 for _ in range(n_stars)] + [1 for _ in range(n_galaxies)] + [2 for _ in range(wild_card)]
+
+        if self.shuffle: 
+            self.rng.shuffle(labels)
+
+        return np.asarray(labels)
+    
+    def generate_image(self, label):
+        if label == 2: 
+            return np.zeros((self.image_size, self.image_size))
+        else: 
+            return super().generate_image(label)
+    
+    def __getitem__(self, idx):
+        items, labels = super().__getitem__(idx)
+        labels[labels == 2] = 0
+        return items, labels
 
 class SkyGenerator04(SkyGeneratorTrue): 
     def __init__(self, n_samples, pre_processing=None, train=True, shuffle=False, batch_size=64):
@@ -106,8 +127,8 @@ class SkyGenerator04(SkyGeneratorTrue):
         super().__init__(n_samples, image_size, pre_processing, train, shuffle, batch_size)
         
     def decide_labels(self): 
-        n_stars = self.rng.integers(low=int(.45*self.n_samples), high=int(.65*self.n_samples))
-        n_galaxies = self.rng.integers(low=int(.6*(self.n_samples-n_stars)), high=int(.9*(self.n_samples-n_stars)))
+        n_stars = (self.rng.integers(low=int(.45*self.n_samples), high=int(.65*self.n_samples)))
+        n_galaxies = (self.rng.integers(low=int(.6*(self.n_samples-n_stars)), high=int(.9*(self.n_samples-n_stars))))
         wild_card = self.n_samples - (n_stars+n_galaxies)
         labels = [0 for _ in range(n_stars)] + [1 for _ in range(n_galaxies)] + [2 for _ in range(wild_card)]
 
