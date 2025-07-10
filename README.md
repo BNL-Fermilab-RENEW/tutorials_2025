@@ -11,7 +11,7 @@ To save your work - click the `Save a copy in Drive` button under the `File` men
 ## Fermilab Schedule 
 
 ### Group 1 
-| Day  | Topic | Notebook | Companion Materials |
+| Day  | Topic | Notebook | Companion Materials / Slides |
 | ------------- |------------- | -------------| -------------| 
 | 1      | Introduction to Python for Science| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BNL-Fermilab-RENEW/tutorials_2025/blob/main/Introduction/introduction.ipynb)     | [![View additional resources](https://colab.research.google.com/assets/colab-badge.svg)] [![Static Badge](https://img.shields.io/badge/Open_in_Drive-blue?style=flat&logo=googleslides&labelColor=grey)](https://docs.google.com/presentation/d/1rTdhyjryut-woPliMeRFvXEILXpHkM_O_Q_Pz5nY2FI/edit?usp=sharing))
 | 2      |Regression and Classification with SGD | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BNL-Fermilab-RENEW/tutorials_2025/blob/main/RegressionClassification/RegressionClassification.ipynb)     | n/a |
